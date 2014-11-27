@@ -1,8 +1,15 @@
 <html>
   <head>
+     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.4/angular.min.js"></script>
     <title>Android XML Builder</title>
   </head>
   <body>
     Android XML Builder
+    <div>
+      <label>Name:</label>
+      <input type="text" ng-model="yourName" placeholder="Enter a name here">
+      <hr>
+      <h1>Hello {{yourName}}!</h1>
+    </div>
   <body/>
 </html>
