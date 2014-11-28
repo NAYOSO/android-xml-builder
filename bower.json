@@ -20,6 +20,8 @@
     "builder"
   ],
   "dependencies": {
-    "polymer": "Polymer/polymer#~0.5.1"
+    "polymer": "Polymer/polymer#~0.5.1",
+    "platform": "Polymer/platform#~0.4.2",
+    "core-collapse": "Polymer/core-collapse#~0.5.1"
   }
 }
