@@ -1,0 +1,25 @@
+{
+  "name": "android-xml-builder",
+  "version": "(0.0.1)",
+  "homepage": "https://github.com/NAYOSO/android-xml-builder",
+  "authors": [
+    "NAYOSO <niko.yuwono.91@gmail.com>"
+  ],
+  "description": "Tool to help Android Developers and Designers to generate an Android resource XML File",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "keywords": [
+    "Android",
+    "XML",
+    "builder"
+  ],
+  "dependencies": {
+    "polymer": "Polymer/polymer#~0.5.1"
+  }
+}
