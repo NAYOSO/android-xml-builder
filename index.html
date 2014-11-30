@@ -1,14 +1,38 @@
 <html>
   <head>
     <script src="bower_components/platform/platform.js"></script>
-    <link rel="import" href="bower_components/polymer/polymer.html">
-    <link rel="import" href="bower_components/core-collapse/core-collapse.html">
     <script src="bower_components/webcomponentsjs/webcomponents.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="import" href="bower_components/polymer/polymer.html">
+    <link rel="import" href="/core-icons/core-icons.html">
+    <link rel="import" href="bower_components/font-roboto/roboto.html">
+    <link rel="import" href="bower_components/paper-tabs/paper-tabs.html">
+    <link rel="import" href="bower_components/core-toolbar/core-toolbar.html">
+    <link rel="import" href="bower_components/core-media-query/core-media-query.html">
+    <link rel="import" href="bower_components/paper-icon-button/paper-icon-button.html">
     <title>Android XML Builder</title>
   </head>
 
 	<body unresolved>
-
+	<core-toolbar class="medium-tall">
+		<paper-icon-button icon="menu"></paper-icon-button>
+		<div flex>Android XML Builder</div>
+		<paper-icon-button icon="search"></paper-icon-button>
+		<paper-icon-button icon="more-vert"></paper-icon-button>
+		
+		<div class="bottom fit" horizontal layout>
+		
+		  <paper-tabs selected="0" flex style="max-width: 600px;">
+		
+			<paper-tab>ITEM ONE</paper-tab>
+			<paper-tab>ITEM TWO</paper-tab>
+			<paper-tab>ITEM THREE</paper-tab>
+			
+		  </paper-tabs>
+		  
+		</div>
+	  
+	  </core-toolbar>
 	  <div class="heading" onclick="document.querySelector('#collapse1').toggle();">Collapse #1</div>
 	  <core-collapse id="collapse1" class="core-collapse-closed" style="overflow: hidden; height: 0px;">
 		<div class="content">
