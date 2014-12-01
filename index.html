@@ -10,6 +10,8 @@
     <link rel="import" href="bower_components/core-toolbar/core-toolbar.html">
     <link rel="import" href="bower_components/core-media-query/core-media-query.html">
     <link rel="import" href="bower_components/paper-icon-button/paper-icon-button.html">
+    <link rel="import" href="bower_components/core-animated-pages/core-animated-pages.html">
+    <link rel="import" href="bower_components/core-animated-pages/transitions/slide-from-right.html">
     <style>
     	body {
 		margin: 0;
@@ -26,7 +28,7 @@
 		
 		<div class="bottom fit" horizontal layout>
 		
-		  <paper-tabs selected="0" flex style="max-width: 600px;">
+		  <paper-tabs selected="0" id="tabs" flex style="max-width: 600px;">
 		
 			<paper-tab><h3>Color</h3></paper-tab>
 			<paper-tab><h3>String</h3></paper-tab>
@@ -36,6 +38,33 @@
 		  </paper-tabs>
 		  
 		</div>
+		<core-animated-pages selected="{{$.tabs.selected}}" transitions="slide-from-right">
+		    <section class="core-selected" active="">
+		      <div layout="" vertical="" center="" center-justified="" style="background:red;">
+		        <div>1</div>
+		      </div>
+		    </section>
+		    <section class="">
+		      <div layout="" vertical="" center="" center-justified="" style="background:blue;">
+		        <div>2</div>
+		      </div>
+		    </section>
+		    <section class="">
+		      <div layout="" vertical="" center="" center-justified="" style="background:purple;">
+		        <div>3</div>
+		      </div>
+		    </section>
+		    <section class="">
+		      <div layout="" vertical="" center="" center-justified="" style="background:orange;">
+		        <div>4</div>
+		      </div>
+		    </section>
+		    <section class="">
+		      <div layout="" vertical="" center="" center-justified="" style="background:green;">
+		        <div>5</div>
+		      </div>
+		    </section>
+	    	</core-animated-pages>
 	  
 	  </core-toolbar>
 
