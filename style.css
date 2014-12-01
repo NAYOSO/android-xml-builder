@@ -1,23 +1,4 @@
 <style shim-shadowdom>
-  
-    body {
-      transition: opacity ease-in 0.2s; 
-      font-family: RobotoDraft, 'Helvetica Neue', Helvetica, Arial;
-      margin: 0;
-      color: #333;
-    }
-    
-    body[unresolved] {
-        margin: 0;
-    	opacity: 0; 
-    	display: block; 
-    	overflow: hidden; 
-    	position: relative; 
-    } 
-    
-    body.core-narrow {
-      padding: 0px;
-    }
     
     paper-tabs, core-toolbar {
       background-color: #00bcd4;
