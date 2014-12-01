@@ -3,12 +3,12 @@
     body {
       transition: opacity ease-in 0.2s; 
       font-family: RobotoDraft, 'Helvetica Neue', Helvetica, Arial;
-      margin: 0px;
-      padding: 0px;
+      margin: 0;
       color: #333;
     }
     
     body[unresolved] {
+        margin: 0;
     	opacity: 0; 
     	display: block; 
     	overflow: hidden; 
