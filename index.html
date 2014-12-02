@@ -28,19 +28,19 @@
 		
 		<div class="bottom fit" horizontal layout>
 		
-		  <paper-tabs selected="0" id="tabs" flex style="max-width: 600px;">
+		  <paper-tabs selected="0" id="paper-tabs" flex horizontal center layout>
 		
-			<paper-tab><h3>Color</h3></paper-tab>
-			<paper-tab><h3>String</h3></paper-tab>
-			<paper-tab><h3>Dimens</h3></paper-tab>
-			<paper-tab><h3>Value</h3></paper-tab>
+			<paper-tab horizontal center layout><h3>Color</h3></paper-tab>
+			<paper-tab horizontal center layout><h3>String</h3></paper-tab>
+			<paper-tab horizontal center layout><h3>Dimens</h3></paper-tab>
+			<paper-tab horizontal center layout><h3>Value</h3></paper-tab>
 			
 		  </paper-tabs>
 		  
 		</div>
 	</core-toolbar>
 	  
-	<core-animated-pages selected="{{$.tabs.selected}}" transitions="slide-from-right">
+	<core-animated-pages id="content-pages" selected="0" transitions="slide-from-right">
 	    <section class="core-selected" active="">
 	      <div layout="" vertical="" center="" center-justified="" style="background:red;">
 	        <div>1</div>
@@ -69,4 +69,13 @@
     	</core-animated-pages>
 
 	</body>
+	
+	  <script>
+		  var tabs = document.getElementById('paper-tabs');
+		  var contentPages = document.getElementById('content-pages');
+		
+		  tabs.addEventListener('core-select', function() {
+		    contentPages.selected = tabs.selected;
+		  });
+	  </script>
 </html>
