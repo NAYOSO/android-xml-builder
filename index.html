@@ -32,6 +32,7 @@
 			width: 50%;
 			height: 100%;
 			position: absolute;
+			top: 0;
 			left: 0;
 		}
 		#string-output { 
@@ -39,6 +40,7 @@
 			width: 50%;
 			height: 100%;
 			position: absolute;
+			top: 0;
 			right: 0;
 		}
     </style>
@@ -108,11 +110,11 @@
 	  </script>
 	  <script>
 		  var colorEditor = ace.edit("color-editor");
-		  colorEditor.setTheme("ace/theme/monokai");
+		  colorEditor.setTheme("ace/theme/ambiance");
 		  colorEditor.getSession().setMode("ace/mode/javascript");
 		  var stringEditor = ace.edit("string-editor");
-		  colorEditor.setTheme("ace/theme/monokai");
-		  colorEditor.getSession().setMode("ace/mode/javascript");
+		  stringEditor.setTheme("ace/theme/ambiance");
+		  stringEditor.getSession().setMode("ace/mode/javascript");
 		  var stringOutput = ace.edit("string-output");
 		  stringOutput.setTheme("ace/theme/monokai");
 		  stringOutput.getSession().setMode("ace/mode/javascript");
